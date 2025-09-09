@@ -24,3 +24,16 @@
   display: block;
   text-align: center;
 }
+#git {
+font-style: oblique;
+color: aquamarine;
+font-weight: bold;
+margin-top: 1rem;
+display: block;
+text-align: center;
+}
+#banner {
+margin-top: 1rem;
+display: block;
+text-align: center;
+}

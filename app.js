@@ -25,6 +25,11 @@ const outros = [
                     "Another chapter ends…",
                     "Steel sharpens steel."
                 ];
+let pictures = [
+        "earth",
+        "skullknight",
+        
+];
 function a()
         {          
                 const randomQuotes = Math.floor(Math.random()* quotes.length)
@@ -32,5 +37,21 @@ function a()
                 document.getElementById("quote").innerText = quotes[randomQuotes]
                 document.getElementById("end").innerText = outros[randomOutro]
         }
+let counter = 0;
+let bi = new Array
+for(i = 0; i < pictures.length;i++)
+{
+        bi[i] = new Image();
+        bi[i].src = "img/"+pictures[i]+".png";
+}
+function b()    
+{
+                        document.getElementById("banner").src = bi[counter].src;
+                        counter++
+                        if(counter == pictures.length){
+                                counter = 0;
+                        }
+}
+setInterval(b,1000)
 a();
 setInterval(a,2000)
